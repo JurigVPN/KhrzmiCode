@@ -20,7 +20,7 @@ echo ''
 echo -e "$green.........................................................."$NC
 echo -e "$BGBLUE                ⚡ PREMIUM SPEED SCRIPT ⚡                "$NC
 echo -e "$green.........................................................."$NC
-echo -e "               Autoscript Mod By JurigVPN" | lolcat
+echo -e "               Autoscript Mod By JurigVPN"$NC | lolcat
 echo -e "                    CONTACT TELEGRAM"$NC | lolcat
 echo -e "                       @JurigVPN"$NC | lolcat
 echo -e "$green.........................................................."$NC
@@ -65,7 +65,7 @@ echo -e "$green.........................................................."$NC
 echo -e "$BGBLUE                ⚡ PREMIUM SPEED SCRIPT ⚡                "$NC
 echo -e "$green.........................................................."$NC
 echo -e "$RED                PERMISSION DENIED/AKSES DITOLAK"$NC
-echo -e "               Autoscript Mod By JurigVPN" | lolcat
+echo -e "               Autoscript Mod By JurigVPN"$NC | lolcat
 echo -e "                    CONTACT TELEGRAM"$NC | lolcat
 echo -e "                       @JurigVPN"$NC | lolcat
 echo -e "$green.........................................................."$NC
