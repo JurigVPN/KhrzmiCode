@@ -46,7 +46,7 @@ clear
 # Valid Script
 VALIDITY() {
     today=$(date -d "0 days" +"%Y-%m-%d")
-    Exp1=$(curl https://raw.githubusercontent.com/JurigVPN/izinvps/ipuk/ip | grep $MYIP | awk '{print $4}')
+    Exp1=$(curl https://raw.githubusercontent.com/JurigVPN/izinvps/ipuk/ipe | grep $MYIP | awk '{print $4}')
     if [[ $today < $Exp1 ]]; then
         echo -e "\e[32mAUTOSCRIPT SUKSES..\e[0m"
         sleep 5
@@ -56,7 +56,7 @@ VALIDITY() {
     exit 0
     fi
 }
-IZIN=$(curl https://raw.githubusercontent.com/JurigVPN/izinvps/ipuk/ip | awk '{print $5}' | grep $MYIP)
+IZIN=$(curl https://raw.githubusercontent.com/JurigVPN/izinvps/ipuk/ipe | awk '{print $5}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
 echo -e "\e[32mPermohonan diterima...\e[0m"
     VALIDITY
@@ -76,7 +76,7 @@ sleep 3
     exit 0
 fi
 clear
-CLNAME=$(curl https://raw.githubusercontent.com/JurigVPN/izinvps/ipuk/ip | grep $MYIP | awk '{print $2}')
+CLNAME=$(curl https://raw.githubusercontent.com/JurigVPN/izinvps/ipuk/ipe | grep $MYIP | awk '{print $2}')
 if [ $MYIP = $CLNAME ]; then
 echo ""
 fi
