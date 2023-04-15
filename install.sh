@@ -3,6 +3,21 @@ dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Dat
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 
+echo ''
+clear
+echo ''
+echo -e "$green.........................................................."$NC
+echo -e "$BGBLUE                ⚡ PREMIUM SPEED SCRIPT ⚡                "$NC
+echo -e "$green.........................................................."$NC
+echo -e "               Autoscript Mod By JurigVPN"$NC
+echo -e "                    CONTACT TELEGRAM"$NC
+echo -e "                       @JurigVPN"$NC
+echo -e "$green.........................................................."$NC
+echo -e "$BGBLUE                       Tunggu 3 Detik!                    "$NC
+echo -e "$green.........................................................."$NC
+sleep 3
+clear
+
 BURIQ () {
     curl -sS https://raw.githubusercontent.com/JurigVPN/izinvps/ipuk/ip > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
@@ -30,10 +45,10 @@ Bloman () {
 if [ -f "/etc/.$Name.ini" ]; then
 CekTwo=$(cat /etc/.$Name.ini)
     if [ "$CekOne" = "$CekTwo" ]; then
-        res="Expired"
+        res="License tidak valid/Expired"
     fi
 else
-res="Permission Accepted..."
+res="License Permission Accepted..."
 fi
 }
 
@@ -43,7 +58,7 @@ PERMISSION () {
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
-    res="Permission Denied!"
+    res="Licence Permission Denied!"
     fi
     BURIQ
 }
