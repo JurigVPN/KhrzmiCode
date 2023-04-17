@@ -33,7 +33,7 @@ CekTwo=$(cat /etc/.$Name.ini)
         res="Permission Denied!"
     fi
 else
-res="Permission Accepted"
+res="Permission Accepted..."
 fi
 }
 
